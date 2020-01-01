@@ -78,7 +78,7 @@ main {
 }
 
 .option-container > div {
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,6 +130,10 @@ main {
     margin: 0px;
 }
 
+.text-container-title {
+    margin-bottom: 8px;
+}
+
 .description-container {
     min-width: 50%;
     padding: 20px 0px 0px 40px;
@@ -140,6 +144,10 @@ main {
     width: 100%;
 }
 
+.description-container .text-container-title {
+    margin-top: 0px;
+}
+
 .description-container .text-container-description {
     font-size: 14px;
 }
@@ -148,6 +156,7 @@ main {
     color: white;
     font-size: 10px;
     width: 48px;
+    margin-bottom: 40px;
 }
 
 .lorem-index h3 {
@@ -158,6 +167,13 @@ main {
     width: 70%;
     height: 1px;
     background-color: white;
+}
+
+.description-container button {
+    padding: 16px 24px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
 }
 
 .main-container-2 {
@@ -173,6 +189,12 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.index-container .lorem-index {
+    margin: 0px 16px;
 }
 
 .landscape-container {
