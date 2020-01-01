@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+nav {
+    width: 80%;
+    margin: 16px auto;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li:first-child {
+    flex-grow: 0.9;
+}
+
+nav ul li:first-child a {
+    color: black;
+}
+
+nav ul li:not(:first-child) {
+    font-family: "Merriweather", serif;
+}
+
+nav ul li:not(:first-child) a {
+    color: gray;
+}
+
+nav ul li:not(:first-child) a::after {
+    content: "";
+    display: block;
+    background-color: red;
+    height: 2px;
+    width: 0%;
+    transition: width 600ms;
+}
+
+nav ul li:not(:first-child) a:hover::after {
+    width: 100%;
+}
+
+main {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.main-title {
+    margin-top: 0px;
+    margin-bottom: 32px;
+    font-size: 90px;
+}
+
+.main-description {
+    font-family: "Merriweather", serif;
+    margin-bottom: 56px;
+}
+
+main a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    font-family: "Merriweather", serif;
+    background-image: linear-gradient(to right, black, rgb(233, 55, 55));
+    padding: 16px 32px;
+    border-radius: 5px;
+}
+
+main a svg {
+    justify-content: end;
+    align-items: center;
+}
+
+main a:hover {
+    animation-name: button;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes button {
+    from { }
+
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+footer p {
+    margin: 8px 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: 12px;
+    color: gray;
+}
+
