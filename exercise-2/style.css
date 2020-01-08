@@ -63,6 +63,7 @@ h1, h2, p {
     position: absolute;
     bottom: 14px;
     left: 16px;
+    max-width: 95%;
 }
 
 .title-container {

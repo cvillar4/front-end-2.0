@@ -47,8 +47,12 @@ main {
 }
 
 .grid-item {
-    width: 50%;
-    position: relative;
+    width: 45%;
+    max-width: 50%;
+    padding: 0 0 8px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .grid-item-1 {
@@ -65,7 +69,7 @@ main {
     align-items: center;
     justify-content: space-between;
     width: 70%;
-    height: 50%;
+    height: 65%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -120,14 +124,13 @@ main {
 
 .grid-item .text-container {
     color: white;
-    position: absolute;
-    bottom: 0px;
-    padding: 0px 40px 16px 8px;
+    max-width: 80%;
 }
 
 .grid-item .text-container-description {
     font-size: 11px;
     margin: 0px;
+    width: 100%;
 }
 
 .text-container-title {
@@ -155,17 +158,20 @@ main {
 .lorem-index {
     color: white;
     font-size: 10px;
-    width: 48px;
+    width: fit-content;
     margin-bottom: 40px;
 }
 
 .lorem-index h3 {
     width: 100%;
+    margin: 0;
 }
 
-.lorem-index div {
-    width: 70%;
+.lorem-index h3::after {
+    content: " ";
+    display: inline-block;
     height: 1px;
+    width: 70%;
     background-color: white;
 }
 
