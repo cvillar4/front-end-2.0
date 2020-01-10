@@ -1,0 +1,5 @@
+1. Full width banner using image provided (Useimage as background and not as <img>).
+2. Background image should take up 100% of window height (Take into account the different dimensions like px, vw, etc ).
+3. An overlay should be present, so background image looks darker and white text looks brighter.
+4. Text should be centered vertically and horizontally (Use Centering Design patterns). 
+5. Arrow at the bottom of the banner, centered horizontally (Use Centering Design patterns).

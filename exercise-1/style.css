@@ -2,24 +2,25 @@ body {
     margin: 0px;
 }
 
-.main-banner {
-    background: url(assets/background-img.jpeg) no-repeat center center fixed; 
+main {
+    background: url(assets/background-img.jpeg) no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
-    position: relative;
 }
 
 .main-overlay-banner {
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 100vh;
+    height: 100%;
+    position: relative;
 }
 
-.banner-text {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 54%;
+.text-banner {
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 p {
@@ -29,11 +30,12 @@ p {
     text-align: center;
     font-size: 44px;
     font-weight: lighter;
-} 
-
-.banner-arrow {
-    position: absolute;
-    bottom: 4%;
-    left: 50%;
-    transform: translate(-50%);
 }
+
+.arrow-banner {
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+}
+

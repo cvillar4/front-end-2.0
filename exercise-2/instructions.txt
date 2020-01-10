@@ -1,0 +1,13 @@
+1. Centered title “Cool simple grid”
+2. Centered text “This is a simple text above a simple grid”
+3. Grid should have a max-width of 1200px, after that, it should be centered in the page.
+4. Each item should be 100% width in mobile, 50% tablet and 33.33% desktop.
+5. Each grid item should have a background image.
+6. Each grid item should have text at the bottom left corner.
+7. On hover, each item should show an orange overlay and the text inside the item should move up.
+8. On hover, a white square containing an arrow should appear below the text (svg provided).
+
+
+Breakpoints:
+Tablet: 540px
+Desktop: 1024px
