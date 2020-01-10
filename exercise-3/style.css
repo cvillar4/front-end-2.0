@@ -1,79 +1,141 @@
 body {
-    margin: 0px;
+    margin: 0;
     height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .background-container {
     display: flex;
     height: 100%;
-    position: relative;
+    padding: 0;
 }
 
 .background-container-1 {
-    background: url(assets/background-8.jpg) no-repeat center; 
-    background-size: cover;
     width: 40%;
     height: 100%;
 }
 
 .background-container-2 {
-    background: url(assets/background-1.jpg) no-repeat center; 
-    background-size: cover;
     width: 60%;
     height: 100%;
 }
 
-main {
-    position: absolute;
-    height: 90%;
+.background-container-1 div {
+    background: url(assets/background-8.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.background-container-2 div {
+    background: url(assets/background-1.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.main-container {
     width: 80%;
-    bottom: 0%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.main-container > section {
 }
 
 .main-container-1 {
-    display: flex;
     width: 100%;
     height: 80%;
+    display: flex;
+}
+
+.main-container-2 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+.main-container-1-1 {
+    width: 50%;
+    height: 100%;
+}
+
+.main-container-1-2 {
+    width: 50%;
+    height: 100%;
 }
 
 .grid-container {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    min-width: 50%;
 }
 
 .grid-item {
-    width: 45%;
-    max-width: 50%;
-    padding: 0 0 8px 16px;
+    width: 50%;
+    height: 50%;
+}
+
+.grid-item-background-1 {
+    background: url(assets/background-3.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item-background-2 {
+    background: url(assets/background-2.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item-background-3 {
+    background: url(assets/background-4.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item-background-4 {
+    background-color: darkorange;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item-content {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
 }
 
-.grid-item-1 {
-    background: url(assets/background-3.jpg); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+.grid-item-background-1 .grid-item-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .option-container {
+    width: 70%;
+    height: 70%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
-    width: 70%;
-    height: 65%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    align-items: center;
 }
 
 .option-container button {
@@ -104,55 +166,29 @@ main {
     border: 1px solid white;
 }
 
-.grid-item-2 {
-    background: url(assets/background-2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.grid-item-3 {
-    background: url(assets/background-4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.grid-item-4 {
-    background-color: darkorange;
-}
-
-.grid-item .text-container {
+.text-container {
+    width: 90%;
     color: white;
-    max-width: 80%;
-}
-
-.grid-item .text-container-description {
-    font-size: 11px;
-    margin: 0px;
-    width: 100%;
-}
-
-.text-container-title {
     margin-bottom: 8px;
 }
 
-.description-container {
-    min-width: 50%;
-    padding: 20px 0px 0px 40px;
+.text-container-title {
+    margin: 0 0 8px;
 }
 
-.description-container .text-container {
-    color: white;
+.text-container-description {
+    margin: 0;
+    font-size: 12px;
+}
+
+.main-container-1-2-content {
     width: 100%;
+    height: 100%;
 }
 
-.description-container .text-container-title {
-    margin-top: 0px;
-}
-
-.description-container .text-container-description {
-    font-size: 14px;
+.main-container-1-2-content .text-container {
+    margin-top: 24px;
+    margin-left: 24px;
 }
 
 .lorem-index {
@@ -175,36 +211,36 @@ main {
     background-color: white;
 }
 
-.description-container button {
+.main-container-1-2-content button {
+    margin-top: 64px;
     padding: 16px 24px;
     background-color: transparent;
     border: 1px solid white;
     color: white;
 }
 
-.main-container-2 {
-    display: flex;
-    width: 100%;
-    height: 20%;
+.index-container {
+    width: 50%;
+    height: 100%;
 }
 
-.index-container {
-    min-width: 50%;
+.index-container-background {
+    width: 100%;
     height: 100%;
-    background: url(assets/background-5.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(assets/background-5.jpg) no-repeat center;
     background-size: cover;
+}
+
+.index-content {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
 }
 
-.index-container .lorem-index {
-    margin: 0px 16px;
-}
 
 .landscape-container {
-    min-width: 50%;
+    width: 50%;
     height: 100%;
     display: flex;
 }
@@ -215,15 +251,15 @@ main {
 }
 
 .landscape-item-1 {
-    background: url(assets/background-6.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 100%;
+    height: 100%;
+    background: url(assets/background-6.jpg) no-repeat center;
     background-size: cover;
 }
 
 .landscape-item-2 {
-    background: url(assets/background-7.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 100%;
+    height: 100%;
+    background: url(assets/background-7.jpg) no-repeat center;
     background-size: cover;
 }

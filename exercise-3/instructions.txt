@@ -1,0 +1,4 @@
+1. Use assets and create a page with the same look and feel than the one provided by the mockup.
+2. Avoid using floats or absolute positioning when it is not needed.
+3. Avoid duplicating CSS code
+4. Create an understandable html structure following good naming conventions.
